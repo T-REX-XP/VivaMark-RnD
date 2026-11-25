@@ -1,0 +1,186 @@
+{
+  "title": "VivaMark Studio",
+  "question": "Choose the editor’s visual direction. Protocol validation work continues while you choose.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Label studio",
+      "lineage": "Woven labels and textile sample books",
+      "thesis": "A calm green workspace centered on the badge artwork.",
+      "palette": [
+        "#173c35",
+        "#eef3ee",
+        "#f9faf6",
+        "#e9a25a"
+      ],
+      "materials": [
+        "flat forest-green navigation",
+        "clear sample surfaces"
+      ],
+      "viewport": "Left navigation, large circular artwork, right editing controls; validation sits next to export.",
+      "risk": "The green shell needs enough contrast to keep device states clear.",
+      "raised": [
+        {
+          "from": "Design annual",
+          "raise": "Give the artwork a generous uninterrupted proofing area."
+        },
+        {
+          "from": "Gate board",
+          "raise": "Keep changed device states visible until acknowledged."
+        }
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html",
+      "comp": ".impeccable/mocks/decision/assigned.webp"
+    },
+    {
+      "id": "pick",
+      "label": "Photo workbench",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Photographic contact sheets",
+      "thesis": "A familiar charcoal image editor with a large live badge proof.",
+      "palette": [
+        "#20252a",
+        "#f2f3f5",
+        "#ffffff",
+        "#4262df"
+      ],
+      "materials": [
+        "charcoal shell",
+        "white canvas"
+      ],
+      "viewport": "Tool rail, centered canvas, property panel, thumbnails underneath.",
+      "risk": "Familiar and effective, but close to conventional image editors.",
+      "html": ".impeccable/mocks/decision/pick.html",
+      "comp": ".impeccable/mocks/decision/pick.webp"
+    },
+    {
+      "id": "plate",
+      "label": "Gallery proof",
+      "verdict": "competitive",
+      "lineage": "Design annual plate sections",
+      "thesis": "A bright proofing surface gives the badge image first priority.",
+      "palette": [
+        "#f5f4f6",
+        "#16181a",
+        "#dcdDF3"
+      ],
+      "materials": [
+        "near-white panels",
+        "fine separators"
+      ],
+      "viewport": "Top navigation, a large image proof, editing properties and validation below.",
+      "case": "Strong artwork clarity; less recognizable as an everyday badge utility.",
+      "risk": "White controls must remain distinct from white artwork.",
+      "html": ".impeccable/mocks/decision/plate.html",
+      "comp": ".impeccable/mocks/decision/plate.webp"
+    },
+    {
+      "id": "garden",
+      "label": "Garden map",
+      "lineage": "Zoo and gardens guide maps",
+      "palette": [
+        "#8ed462",
+        "#f5f1e4",
+        "#2c2e2a"
+      ],
+      "verdict": "declined",
+      "thesis": "A reference for visual discipline, while standard editor controls remain familiar.",
+      "materials": [
+        "flat surfaces",
+        "clear typography"
+      ],
+      "viewport": "Standard editing workspace.",
+      "case": "Too playful for device integrity states.",
+      "kept": "Clear boundaries between tasks.",
+      "risk": "Too playful for device integrity states."
+    },
+    {
+      "id": "catalog",
+      "label": "Catalog sleeve",
+      "lineage": "Factory records catalog identity",
+      "palette": [
+        "#111111",
+        "#ffffff",
+        "#9d83cb"
+      ],
+      "verdict": "declined",
+      "thesis": "A reference for visual discipline, while standard editor controls remain familiar.",
+      "materials": [
+        "flat surfaces",
+        "clear typography"
+      ],
+      "viewport": "Standard editing workspace.",
+      "case": "Coded labels would slow image editing.",
+      "kept": "Commit to an uncluttered artwork field.",
+      "risk": "Coded labels would slow image editing."
+    },
+    {
+      "id": "gate",
+      "label": "Gate board",
+      "lineage": "Boarding passes and gate boards",
+      "palette": [
+        "#f4f4f0",
+        "#232b34",
+        "#c37223"
+      ],
+      "verdict": "declined",
+      "thesis": "A reference for visual discipline, while standard editor controls remain familiar.",
+      "materials": [
+        "flat surfaces",
+        "clear typography"
+      ],
+      "viewport": "Standard editing workspace.",
+      "case": "Departure ranking does not explain editing.",
+      "kept": "Persist changed device states.",
+      "risk": "Departure ranking does not explain editing."
+    },
+    {
+      "id": "score",
+      "label": "Dance score",
+      "lineage": "Labanotation",
+      "palette": [
+        "#ffffff",
+        "#222222",
+        "#dddddd"
+      ],
+      "verdict": "declined",
+      "thesis": "A reference for visual discipline, while standard editor controls remain familiar.",
+      "materials": [
+        "flat surfaces",
+        "clear typography"
+      ],
+      "viewport": "Standard editing workspace.",
+      "case": "Notation would obscure familiar controls.",
+      "kept": "Keep simultaneous controls aligned.",
+      "risk": "Notation would obscure familiar controls."
+    }
+  ],
+  "buildPath": {
+    "value": "code",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "Standard editor",
+    "thesis": "A familiar blue-and-white editor.",
+    "palette": [
+      "#ffffff",
+      "#182230",
+      "#2563eb"
+    ],
+    "materials": [
+      "white panels"
+    ],
+    "viewport": "Sidebar, artwork canvas and properties.",
+    "risk": "Less distinctive.",
+    "html": ".impeccable/mocks/decision/canon.html",
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true,
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  }
+}

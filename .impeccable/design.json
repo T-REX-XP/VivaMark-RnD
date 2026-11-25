@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T08:59:56.315934+00:00",
+  "title": "Design System: VivaMark Studio",
+  "extensions": {
+    "colorMeta": {
+      "green": {
+        "role": "primary",
+        "displayName": "Green",
+        "tonalRamp": [
+          "oklch(15% 0.0443 179.20)",
+          "oklch(27% 0.0443 179.20)",
+          "oklch(39% 0.0443 179.20)",
+          "oklch(51% 0.0443 179.20)",
+          "oklch(63% 0.0443 179.20)",
+          "oklch(75% 0.0443 179.20)",
+          "oklch(87% 0.0443 179.20)",
+          "oklch(95% 0.0443 179.20)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0378 171.47)",
+          "oklch(27% 0.0378 171.47)",
+          "oklch(39% 0.0378 171.47)",
+          "oklch(51% 0.0378 171.47)",
+          "oklch(63% 0.0378 171.47)",
+          "oklch(75% 0.0378 171.47)",
+          "oklch(87% 0.0378 171.47)",
+          "oklch(95% 0.0378 171.47)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0230 168.67)",
+          "oklch(27% 0.0230 168.67)",
+          "oklch(39% 0.0230 168.67)",
+          "oklch(51% 0.0230 168.67)",
+          "oklch(63% 0.0230 168.67)",
+          "oklch(75% 0.0230 168.67)",
+          "oklch(87% 0.0230 168.67)",
+          "oklch(95% 0.0230 168.67)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0127 149.24)",
+          "oklch(27% 0.0127 149.24)",
+          "oklch(39% 0.0127 149.24)",
+          "oklch(51% 0.0127 149.24)",
+          "oklch(63% 0.0127 149.24)",
+          "oklch(75% 0.0127 149.24)",
+          "oklch(87% 0.0127 149.24)",
+          "oklch(95% 0.0127 149.24)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0045 134.85)",
+          "oklch(27% 0.0045 134.85)",
+          "oklch(39% 0.0045 134.85)",
+          "oklch(51% 0.0045 134.85)",
+          "oklch(63% 0.0045 134.85)",
+          "oklch(75% 0.0045 134.85)",
+          "oklch(87% 0.0045 134.85)",
+          "oklch(95% 0.0045 134.85)"
+        ]
+      },
+      "workspace": {
+        "role": "neutral",
+        "displayName": "Workspace",
+        "tonalRamp": [
+          "oklch(15% 0.0085 145.51)",
+          "oklch(27% 0.0085 145.51)",
+          "oklch(39% 0.0085 145.51)",
+          "oklch(51% 0.0085 145.51)",
+          "oklch(63% 0.0085 145.51)",
+          "oklch(75% 0.0085 145.51)",
+          "oklch(87% 0.0085 145.51)",
+          "oklch(95% 0.0085 145.51)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(27% 0.0000 89.88)",
+          "oklch(39% 0.0000 89.88)",
+          "oklch(51% 0.0000 89.88)",
+          "oklch(63% 0.0000 89.88)",
+          "oklch(75% 0.0000 89.88)",
+          "oklch(87% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "orange": {
+        "role": "primary",
+        "displayName": "Orange",
+        "tonalRamp": [
+          "oklch(15% 0.1223 64.57)",
+          "oklch(27% 0.1223 64.57)",
+          "oklch(39% 0.1223 64.57)",
+          "oklch(51% 0.1223 64.57)",
+          "oklch(63% 0.1223 64.57)",
+          "oklch(75% 0.1223 64.57)",
+          "oklch(87% 0.1223 64.57)",
+          "oklch(95% 0.1223 64.57)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15% 0.1216 61.85)",
+          "oklch(27% 0.1216 61.85)",
+          "oklch(39% 0.1216 61.85)",
+          "oklch(51% 0.1216 61.85)",
+          "oklch(63% 0.1216 61.85)",
+          "oklch(75% 0.1216 61.85)",
+          "oklch(87% 0.1216 61.85)",
+          "oklch(95% 0.1216 61.85)"
+        ]
+      },
+      "green-hover": {
+        "role": "primary",
+        "displayName": "Green Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0496 175.96)",
+          "oklch(27% 0.0496 175.96)",
+          "oklch(39% 0.0496 175.96)",
+          "oklch(51% 0.0496 175.96)",
+          "oklch(63% 0.0496 175.96)",
+          "oklch(75% 0.0496 175.96)",
+          "oklch(87% 0.0496 175.96)",
+          "oklch(95% 0.0496 175.96)"
+        ]
+      },
+      "nav-active": {
+        "role": "primary",
+        "displayName": "Nav Active",
+        "tonalRamp": [
+          "oklch(15% 0.0488 165.88)",
+          "oklch(27% 0.0488 165.88)",
+          "oklch(39% 0.0488 165.88)",
+          "oklch(51% 0.0488 165.88)",
+          "oklch(63% 0.0488 165.88)",
+          "oklch(75% 0.0488 165.88)",
+          "oklch(87% 0.0488 165.88)",
+          "oklch(95% 0.0488 165.88)"
+        ]
+      },
+      "pass-bg": {
+        "role": "neutral",
+        "displayName": "Pass Bg",
+        "tonalRamp": [
+          "oklch(15% 0.0232 131.14)",
+          "oklch(27% 0.0232 131.14)",
+          "oklch(39% 0.0232 131.14)",
+          "oklch(51% 0.0232 131.14)",
+          "oklch(63% 0.0232 131.14)",
+          "oklch(75% 0.0232 131.14)",
+          "oklch(87% 0.0232 131.14)",
+          "oklch(95% 0.0232 131.14)"
+        ]
+      },
+      "pass-text": {
+        "role": "neutral",
+        "displayName": "Pass Text",
+        "tonalRamp": [
+          "oklch(15% 0.0875 142.22)",
+          "oklch(27% 0.0875 142.22)",
+          "oklch(39% 0.0875 142.22)",
+          "oklch(51% 0.0875 142.22)",
+          "oklch(63% 0.0875 142.22)",
+          "oklch(75% 0.0875 142.22)",
+          "oklch(87% 0.0875 142.22)",
+          "oklch(95% 0.0875 142.22)"
+        ]
+      },
+      "warning-bg": {
+        "role": "neutral",
+        "displayName": "Warning Bg",
+        "tonalRamp": [
+          "oklch(15% 0.0266 80.25)",
+          "oklch(27% 0.0266 80.25)",
+          "oklch(39% 0.0266 80.25)",
+          "oklch(51% 0.0266 80.25)",
+          "oklch(63% 0.0266 80.25)",
+          "oklch(75% 0.0266 80.25)",
+          "oklch(87% 0.0266 80.25)",
+          "oklch(95% 0.0266 80.25)"
+        ]
+      },
+      "warning-text": {
+        "role": "neutral",
+        "displayName": "Warning Text",
+        "tonalRamp": [
+          "oklch(15% 0.0894 73.77)",
+          "oklch(27% 0.0894 73.77)",
+          "oklch(39% 0.0894 73.77)",
+          "oklch(51% 0.0894 73.77)",
+          "oklch(63% 0.0894 73.77)",
+          "oklch(75% 0.0894 73.77)",
+          "oklch(87% 0.0894 73.77)",
+          "oklch(95% 0.0894 73.77)"
+        ]
+      },
+      "error-bg": {
+        "role": "neutral",
+        "displayName": "Error Bg",
+        "tonalRamp": [
+          "oklch(15% 0.0206 48.49)",
+          "oklch(27% 0.0206 48.49)",
+          "oklch(39% 0.0206 48.49)",
+          "oklch(51% 0.0206 48.49)",
+          "oklch(63% 0.0206 48.49)",
+          "oklch(75% 0.0206 48.49)",
+          "oklch(87% 0.0206 48.49)",
+          "oklch(95% 0.0206 48.49)"
+        ]
+      },
+      "error-text": {
+        "role": "neutral",
+        "displayName": "Error Text",
+        "tonalRamp": [
+          "oklch(15% 0.0986 38.71)",
+          "oklch(27% 0.0986 38.71)",
+          "oklch(39% 0.0986 38.71)",
+          "oklch(51% 0.0986 38.71)",
+          "oklch(63% 0.0986 38.71)",
+          "oklch(75% 0.0986 38.71)",
+          "oklch(87% 0.0986 38.71)",
+          "oklch(95% 0.0986 38.71)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Page heading",
+        "purpose": "Compact top-level task heading; responsive sizes follow Layout."
+      },
+      "diagnostic": {
+        "displayName": "Diagnostic mono",
+        "purpose": "Connection log timestamps, packets, and technical values."
+      }
+    },
+    "shadows": [
+      {
+        "name": "badge-proof",
+        "value": "0 14px 28px #233f3619, 0 2px 4px #173c3512",
+        "purpose": "Physical circular badge proof."
+      },
+      {
+        "name": "toast",
+        "value": "0 6px 24px #173c3526",
+        "purpose": "Temporary status feedback."
+      },
+      {
+        "name": "upload-modal",
+        "value": "0 18px 64px #10291f44",
+        "purpose": "Native modal review over a #112c2570 backdrop."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-state",
+        "value": "background .16s, color .16s, border-color .16s",
+        "purpose": "State response on controls; removed under reduced motion."
+      },
+      {
+        "name": "library-preview",
+        "value": "background .2s",
+        "purpose": "Library hover response; removed under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1250px"
+      },
+      {
+        "name": "icon-rail",
+        "value": "970px"
+      },
+      {
+        "name": "stacked-mobile",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Implemented editor action variant.",
+      "html": "<button class=\"ds-primary\">Export artwork</button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #d4ddd4;border-radius:8px;padding:10px 14px;min-height:42px;font:600 14px Inter,\"Segoe UI\",Arial,sans-serif;cursor:pointer;transition:background .16s,color .16s,border-color .16s;background:var(--green,#173c35);color:white;border-color:var(--green,#173c35);}.ds-primary:hover:not(:disabled){background:#295248;}.ds-primary:focus-visible{outline:2px solid var(--focus,#b7712a);outline-offset:4px;}.ds-primary:disabled{opacity:.43;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Implemented editor action variant.",
+      "html": "<button class=\"ds-secondary\">Export artwork</button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #d4ddd4;border-radius:8px;padding:10px 14px;min-height:42px;font:600 14px Inter,\"Segoe UI\",Arial,sans-serif;cursor:pointer;transition:background .16s,color .16s,border-color .16s;background:white;color:var(--green,#173c35);}.ds-secondary:hover:not(:disabled){background:#e8eee7;border-color:#b8cbbf;}.ds-secondary:focus-visible{outline:2px solid var(--focus,#b7712a);outline-offset:4px;}.ds-secondary:disabled{opacity:.43;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Implemented editor action variant.",
+      "html": "<button class=\"ds-quiet\">Export artwork</button>",
+      "css": ".ds-quiet{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #d4ddd4;border-radius:8px;padding:10px 14px;min-height:42px;font:600 14px Inter,\"Segoe UI\",Arial,sans-serif;cursor:pointer;transition:background .16s,color .16s,border-color .16s;background:transparent;color:var(--green,#173c35);border-color:transparent;}.ds-quiet:hover:not(:disabled){background:#e5ece3;}.ds-quiet:focus-visible{outline:2px solid var(--focus,#b7712a);outline-offset:4px;}.ds-quiet:disabled{opacity:.43;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-quiet{transition:none}}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "description": "Labeled editor property.",
+      "html": "<label class=\"ds-field\">Artwork name<input value=\"A little sunshine\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:8px;font:500 13px Inter,\"Segoe UI\",Arial,sans-serif;color:#4b6256}.ds-field input{border:1px solid #dce3da;border-radius:6px;padding:10px 11px;background:#fdfefd;font:400 14px Inter,\"Segoe UI\",Arial,sans-serif;color:#244136}.ds-field input:focus{border-color:#7d9983}.ds-field input:focus-visible{outline:2px solid var(--focus,#b7712a);outline-offset:4px;}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Green rail selection, with visible accessible labels.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Studio\"><button class=\"ds-nav-item ds-active\" aria-current=\"page\">Artwork</button><button class=\"ds-nav-item\">My library</button></nav>",
+      "css": ".ds-nav{background:var(--green,#173c35);padding:16px;display:flex;flex-direction:column;gap:6px}.ds-nav-item{border:0;background:transparent;color:#c2d4c8;padding:13px 15px;min-height:48px;border-radius:8px;text-align:left;font:500 14px Inter,\"Segoe UI\",Arial,sans-serif;cursor:pointer}.ds-nav-item:hover{background:#254c41;color:white}.ds-nav-item.ds-active{background:#35594a;color:white}.ds-nav-item:focus-visible{outline:2px solid var(--focus,#b7712a);outline-offset:4px;}"
+    },
+    {
+      "name": "Validation Tag",
+      "kind": "chip",
+      "refersTo": "tag-pass",
+      "description": "A status label, not an action.",
+      "html": "<span class=\"ds-tag\">Structurally valid</span>",
+      "css": ".ds-tag{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;border-radius:5px;padding:4px 7px;font:500 11px Inter,\"Segoe UI\",Arial,sans-serif;background:#e9f2e2;color:#3e693a}"
+    },
+    {
+      "name": "Property Panel",
+      "kind": "card",
+      "refersTo": "properties",
+      "description": "Flat white property surface with a quiet internal divider.",
+      "html": "<section class=\"ds-panel\"><h2>Make it yours</h2><p>Inspect your artwork before export.</p><div class=\"ds-divider\">Resource check</div></section>",
+      "css": ".ds-panel{background:white;color:#233f36;border-radius:14px;padding:24px;font:14px Inter,\"Segoe UI\",Arial,sans-serif}.ds-panel h2{font-size:17px;font-weight:650;letter-spacing:-.2px;margin:0}.ds-panel p{font-size:12px;color:#4f6757;line-height:1.65}.ds-divider{border-top:1px solid #e1e8dd;margin-top:26px;padding-top:22px;font-size:14px;font-weight:650}"
+    },
+    {
+      "name": "Image Upload Review",
+      "kind": "custom",
+      "refersTo": "upload-review",
+      "description": "Single native snapshot preview with direct upload, progress/cancellation, and success on full coverage plus device completion. Readback is optional diagnostic evidence; simulation remains distinct.",
+      "html": "<dialog open class=\"ds-upload\" aria-labelledby=\"ds-upload-title\"><header><h2 id=\"ds-upload-title\">Upload this image</h2><p>Synthetic badge simulator</p></header><div class=\"ds-upload-proof\"><div class=\"ds-upload-circle\" role=\"img\" aria-label=\"Decoded image preview placeholder\"></div><div><strong>Prepared artwork</strong><span>TEST.RES \u00b7 360 \u00d7 360</span><code>SHA-256 fingerprint</code></div></div><p>Simulation only. No physical badge will be changed.</p><footer><button class=\"ds-upload-close\">Close</button><button class=\"ds-upload-primary\">Simulate image upload</button></footer></dialog>",
+      "css": ".ds-upload{position:relative;margin:0;width:min(600px,calc(100vw - 32px));max-height:calc(100dvh - 40px);overflow:auto;border:0;border-radius:16px;padding:28px;color:#233f36;background:#fff;box-shadow:0 18px 64px #10291f44;font:14px Inter,\"Segoe UI\",Arial,sans-serif}.ds-upload::backdrop{background:#112c2570}.ds-upload h2{font-size:23px;margin:0}.ds-upload header p{font-size:13px;color:var(--muted,#61726b);margin:9px 0 0}.ds-upload-proof{display:flex;align-items:center;gap:24px;margin:28px 0}.ds-upload-circle{width:120px;height:120px;border-radius:50%;background:var(--orange,#e9a25a);flex-shrink:0}.ds-upload-proof>div:last-child{display:flex;flex-direction:column;gap:9px;font-size:13px}.ds-upload-proof strong{font-size:17px}.ds-upload-proof code{font:11px ui-monospace,Consolas,monospace;color:#61726b}.ds-upload footer{display:flex;justify-content:flex-end;gap:10px;padding-top:19px;border-top:1px solid var(--line,#dce4dd);margin-top:22px}.ds-upload button{border:1px solid #d4ddd4;background:white;color:var(--green,#173c35);border-radius:8px;padding:10px 14px;min-height:42px;font:600 14px Inter,\"Segoe UI\",Arial,sans-serif;cursor:pointer;transition:background .16s,color .16s,border-color .16s}.ds-upload .ds-upload-primary{background:var(--green,#173c35);border-color:var(--green,#173c35);color:white}.ds-upload button:hover:not(:disabled){background:#e8eee7}.ds-upload .ds-upload-primary:hover:not(:disabled){background:#295248}.ds-upload button:disabled{opacity:.43;cursor:not-allowed}.ds-upload button:focus-visible{outline:2px solid var(--focus,#b7712a);outline-offset:4px}@media(max-width:760px){.ds-upload{padding:22px}.ds-upload-circle{width:100px;height:100px}.ds-upload-proof{gap:17px}.ds-upload h2{font-size:21px}}@media(prefers-reduced-motion:reduce){.ds-upload button{transition:none}}"
+    },
+    {
+      "name": "Layer Row",
+      "kind": "custom",
+      "description": "Top-first layer list with selection and a 44px visibility label. Canvas raster selection follows actual aspect-ratio bounds; invalid selection after Undo returns to Background.",
+      "html": "<div class=\"ds-layer-row ds-layer-selected\"><button class=\"ds-layer-select\" aria-pressed=\"true\" aria-label=\"Select Your text layer\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M4 5h16M12 5v15M8 20h8\"/></svg><span>Your text<small>Text</small></span></button><label class=\"ds-layer-visible\"><input type=\"checkbox\" checked aria-label=\"Show Your text layer\"></label></div>",
+      "css": ".ds-layer-row{display:flex;align-items:center;border-bottom:1px solid var(--line,#dce4dd)}.ds-layer-selected{background:#eef4e8}.ds-layer-select{display:flex;align-items:center;gap:11px;min-height:51px;padding:9px 8px;text-align:left;background:none;border:0;color:#233f36;min-width:0;flex:1;width:100%;cursor:pointer;font:13px Inter,\"Segoe UI\",Arial,sans-serif}.ds-layer-select>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ds-layer-select small{display:block;font-size:11px;color:#61726b;margin-top:3px;text-transform:capitalize}.ds-layer-visible{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;cursor:pointer}.ds-layer-visible input{width:18px;height:18px;accent-color:#173c35}.ds-layer-select:focus-visible,.ds-layer-visible input:focus-visible{outline:2px solid var(--focus,#b7712a);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Label studio",
+    "overview": "Label studio is the user-selected, code-led world: a forest-green tool rail, pale green work surface, white properties, and a warm orange circular artwork proof. The atmosphere is calm and practical, with compact controls and enough open space to inspect the artwork.\n\nEditing remains the visual center. Resource evidence sits beside export, and status colors describe the actual validation state. Native conversion equivalence, structural validity, and physical badge acceptance remain visibly distinct.",
+    "keyCharacteristics": [
+      "Forest-green navigation and pale green workspace.",
+      "Circular artwork proof with a separate decoded RGB565 view.",
+      "Compact, labeled controls in softly rounded white panels.",
+      "Visible focus, restrained state changes, and evidence-specific status."
+    ],
+    "rules": [
+      {
+        "name": "The Evidence Rule",
+        "body": "A positive status names its evidence: local validation, simulation, device-confirmed transfer, or optional byte readback; none establishes interruption recovery.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do keep artwork and decoded resource previews clearly identified.",
+      "Do use the green primary action, white secondary action, and transparent quiet action consistently.",
+      "Do label pending, simulated, and verified states with text as well as color.",
+      "Do preserve the original app artwork pixels and record their source provenance.",
+      "Do retain visible keyboard focus and the reduced-motion preference.",
+      "Do preserve the reviewed resource snapshot, direct upload action, staged progress, cancellation, and device-confirmed completion.",
+      "Do keep images, text, and stickers independently selectable and editable in one Layers panel.",
+      "Do reserve verified byte-readback copy for a readback that actually passed.",
+      "Do connect and disconnect in place; let diagnostics remain an optional navigation destination."
+    ],
+    "donts": [
+      "Don't describe local validation or simulator success as successful physical badge transfer.",
+      "Don't equate bytes sent with device completion, or device completion with independent byte verification.",
+      "Don't export the selected-element outline or flatten editable elements when adding a new layer.",
+      "Don't add a decorative entrance sequence to the editor.",
+      "Don't apply monospace to ordinary editor labels or headings.",
+      "Don't substitute a marketing hero for the working artwork editor."
+    ]
+  }
+}
