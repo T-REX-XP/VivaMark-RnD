@@ -6,6 +6,9 @@ export const createArtwork = (): Artwork => ({id:crypto.randomUUID(), name:'Hell
 const images = new Map<string,Promise<HTMLImageElement>>();
 type ImageSize={width:number;height:number};
 const imageSizes=new Map<string,ImageSize>();
+export const assetUrl=(filename:string)=>`./assets/${filename}`;
+/** Earlier local projects may contain root-relative bundled artwork paths. */
+export const resolveArtworkSource=(src:string)=>src.startsWith('/assets/')?`.${src}`:src;
 /** Hit-test from the top layer, converting pointer coordinates into its rotated space. */
 export function layerAtPoint(artwork:Artwork,x:number,y:number,sizeForImage:(src:string)=>ImageSize|undefined=src=>imageSizes.get(src)):Layer|undefined {
   return [...artwork.layers].reverse().find(layer=>{
@@ -31,7 +34,7 @@ export function stickerDataUrl(image:HTMLImageElement):string {
   const cropped=document.createElement('canvas');cropped.width=right-left+1;cropped.height=bottom-top+1;cropped.getContext('2d')!.drawImage(source,left,top,cropped.width,cropped.height,0,0,cropped.width,cropped.height);
   return cropped.toDataURL('image/png');
 }
-export function imageFor(src:string) { let value=images.get(src); if(!value){value=new Promise<HTMLImageElement>((resolve,reject)=>{const image=new Image();image.onload=()=>{imageSizes.set(src,{width:image.naturalWidth,height:image.naturalHeight});resolve(image);};image.onerror=()=>reject(new Error('Could not decode this image. Try PNG or JPEG.'));image.src=src;});images.set(src,value);}return value; }
+export function imageFor(src:string) { let value=images.get(src); if(!value){value=new Promise<HTMLImageElement>((resolve,reject)=>{const image=new Image();image.onload=()=>{imageSizes.set(src,{width:image.naturalWidth,height:image.naturalHeight});resolve(image);};image.onerror=()=>reject(new Error('Could not decode this image. Try PNG or JPEG.'));image.src=resolveArtworkSource(src);});images.set(src,value);}return value; }
 export async function drawArtwork(canvas:HTMLCanvasElement, artwork:Artwork, proof=false,selectedId?:string|null) {
   const ctx=canvas.getContext('2d',{willReadFrequently:true});if(!ctx) throw new Error('Canvas is unavailable');
   const image=artwork.image?await imageFor(artwork.image):null;

@@ -19,7 +19,7 @@ async def main():
     probe_badge.QUERIES = probe_badge.QUERIES + EXTRA_QUERIES
     matched, count = await probe_badge.scan(12)
     candidates = [(device, adv) for device, adv in matched
-                  if (adv.local_name or device.name) == 'VivaMark']
+                  if (adv.local_name or device.name) in probe_badge.BADGE_NAMES]
     report = {
         'time_utc': datetime.now(timezone.utc).isoformat(),
         'action': 'fixed-read-only-upload-prerequisites',

@@ -112,7 +112,7 @@ async def read_fixed_resource(receive, send_exact, report, bare_name=False):
 async def main(bare_name=False):
     probe_badge.QUERIES += ((7,bytes.fromhex('ff00000004')),)
     matched,count=await probe_badge.scan(20)
-    candidates=[(device,adv) for device,adv in matched if (adv.local_name or device.name)=='VivaMark']
+    candidates=[(device,adv) for device,adv in matched if (adv.local_name or device.name) in probe_badge.BADGE_NAMES]
     report={'time_utc':datetime.now(timezone.utc).isoformat(),'action':'fixed-read-only-existing-image',
             'advertising_candidates':len(candidates),'seen_count':count,
             'resource_writes':False,'fixed_path':'TEST.RES' if bare_name else '/TEST.RES'}

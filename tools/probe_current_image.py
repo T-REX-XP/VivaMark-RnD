@@ -13,7 +13,7 @@ import probe_badge
 async def main():
     probe_badge.QUERIES += ((0x07, bytes.fromhex('ff00000004')), (0x1a, bytes.fromhex('0300')))
     matched, count = await probe_badge.scan(15)
-    candidates = [(device, adv) for device, adv in matched if (adv.local_name or device.name) == 'VivaMark']
+    candidates = [(device, adv) for device, adv in matched if (adv.local_name or device.name) in probe_badge.BADGE_NAMES]
     report = {'time_utc': datetime.now(timezone.utc).isoformat(), 'action': 'read-only-current-watch-path',
               'advertising_candidates': len(candidates), 'seen_count': count, 'resource_writes': False}
     if len(candidates) != 1:

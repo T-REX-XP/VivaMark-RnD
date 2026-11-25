@@ -12,6 +12,7 @@ from datetime import datetime, timezone
 from bleak import BleakScanner, BleakClient
 
 SERVICE = '0000ae00-0000-1000-8000-00805f9b34fb'
+BADGE_NAMES = frozenset({'VivaMark', 'D40(BLE)'})
 WRITE = '0000ae01-0000-1000-8000-00805f9b34fb'
 NOTIFY = '0000ae02-0000-1000-8000-00805f9b34fb'
 PASS = bytes([2, 112, 97, 115, 115])
@@ -166,7 +167,8 @@ async def scan(timeout):
     devices = await BleakScanner.discover(timeout=timeout, return_adv=True)
     matched = []
     for device, adv in devices.values():
-        if 'vivamark' not in (adv.local_name or device.name or '').lower() and SERVICE not in adv.service_uuids:
+        name = adv.local_name or device.name or ''
+        if name not in BADGE_NAMES and 'vivamark' not in name.lower() and SERVICE not in adv.service_uuids:
             continue
         matched.append((device, adv))
     return matched, len(devices)
@@ -184,9 +186,9 @@ async def main(args):
                           for device, adv in matched]}
     if args.read_only:
         candidates = [(device, adv) for device, adv in matched
-                      if (adv.local_name or device.name) == 'VivaMark']
+                      if (adv.local_name or device.name) in BADGE_NAMES]
         if len(candidates) != 1:
-            report['error'] = 'Read-only probe requires exactly one advertising device named VivaMark'
+            report['error'] = 'Read-only probe requires exactly one advertising VivaMark or D40(BLE)'
         else:
             report['action'] = 'authenticated-fixed-read-only-queries'
             try:

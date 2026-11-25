@@ -5608,6 +5608,11 @@
       "sha256": "2297b92f15f623da436b0e86906297a5c2e0ab2dff7533d5ac01e6371f1d7060"
     },
     {
+      "path": "artifacts/discovery-alias-readonly.json",
+      "bytes": 627,
+      "sha256": "c7302364d4829d080bed91bb7a793d61a2a7d0c3c315d062e763d305efbaf4e2"
+    },
+    {
       "path": "artifacts/extracted/base.apk",
       "bytes": 14895809,
       "sha256": "c7317d7559108438e0f01069c95f933a74dcfc537c7e521ca1dd7e25264b31d7"

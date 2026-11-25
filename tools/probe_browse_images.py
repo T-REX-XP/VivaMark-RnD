@@ -92,7 +92,7 @@ async def browse_fixed_root(receive,send_exact,report):
 async def main():
     probe_badge.QUERIES+=((7,bytes.fromhex('ff00000004')),)
     matched,count=await probe_badge.scan(20)
-    candidates=[(device,adv) for device,adv in matched if (adv.local_name or device.name)=='VivaMark']
+    candidates=[(device,adv) for device,adv in matched if (adv.local_name or device.name) in probe_badge.BADGE_NAMES]
     report={'time_utc':datetime.now(timezone.utc).isoformat(),'action':'one-page-fixed-root-directory-browse',
             'resource_writes':False,'advertising_candidates':len(candidates),'seen_count':count}
     if len(candidates)!=1:report['error']='Need exactly one advertising VivaMark; no connection attempted'

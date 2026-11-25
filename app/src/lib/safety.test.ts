@@ -89,10 +89,12 @@ test('mock browser subscribes before authentication and cleans failed setup list
       const write={properties:{write:true},writeValueWithResponse:async(bytes:Uint8Array)=>{events.push('write');await simulator.send(bytes);}};
       const gatt={connected:false,connect:async()=>{gatt.connected=true;return gatt;},disconnect:()=>{events.push('disconnect');gatt.connected=false;},getPrimaryService:async()=>({getCharacteristic:async(uuid:string)=>uuid.includes('ae01')?write:notify})};device.gatt=gatt;
       const originalRemove=notify.removeEventListener.bind(notify);notify.removeEventListener=(...args:any[])=>{events.push('remove-notify');originalRemove(...args);};
-      Object.defineProperty(globalThis,'navigator',{configurable:true,value:{bluetooth:{requestDevice:async()=>device}}});
+      let discovery:any;
+      Object.defineProperty(globalThis,'navigator',{configurable:true,value:{bluetooth:{requestDevice:async(options:any)=>{discovery=options;return device;}}}});
       const client=new DiagnosticsClient();
       if(failSubscribe){await expect(client.connectBrowser()).rejects.toThrow('Subscription failed');expect(events).toContain('remove-notify');expect(events).not.toContain('write');}
       else{await client.connectBrowser();expect(client.authenticated).toBe(true);expect(events.indexOf('subscribe')).toBeLessThan(events.indexOf('write'));await client.queryDeviceInfo();client.disconnect();expect(events).toContain('remove-notify');}
+      expect(discovery).toEqual({filters:[{name:'VivaMark'},{name:'D40(BLE)'},{services:['0000ae00-0000-1000-8000-00805f9b34fb']}],optionalServices:['0000ae00-0000-1000-8000-00805f9b34fb']});
       expect(gatt.connected).toBe(false);simulator.close();
     }
   }finally{if(previous)Object.defineProperty(globalThis,'navigator',previous);else delete (globalThis as any).navigator;}

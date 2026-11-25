@@ -2,6 +2,8 @@
 
 A local Bun + React app for composing digital badge artwork and validating the recovered VivaMark protocol.
 
+GitHub Actions validates and deploys the static app to GitHub Pages. See [deployment and reference review](docs/github-pages.md) for setup, project-path previews and the publication boundary.
+
 ```powershell
 bun install
 bun run dev
@@ -42,7 +44,7 @@ Additional analysis: [authentication](docs/auth-native.md), [resource encoding](
 
 `reference/` contains browser-compatible protocol primitives and tests. The native-derived authentication and still-image implementations have differential validation; see each document's verification boundary. The system-0 FAT backend still requires filesystem implementation work. The observed badge selects system 1; this does not make untested transfer/recovery safe.
 
-`artifacts/extracted/` preserves the two APKs and relevant native libraries. `artifacts/decompiled/` contains 1,117 app/Jieli Java files. [REA evidence](artifacts/rea-evidence.json) and the [SHA-256 manifest](artifacts/extraction-manifest.json) preserve provenance. `tools/` contains the export and inspection utilities.
+The original local R&D checkout retains extracted APKs, native libraries, decompiled Java and raw REA reports. These are excluded from the publication snapshot. The [SHA-256 manifest](artifacts/extraction-manifest.json) records provenance. `tools/` contains export and inspection utilities; regenerating native fixtures requires the original local inputs.
 
 Run all reference tests from PowerShell:
 

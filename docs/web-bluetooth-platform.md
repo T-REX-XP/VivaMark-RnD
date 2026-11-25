@@ -10,6 +10,14 @@ Target Chrome or Edge on Windows first, then Chrome on Android and macOS. Curren
 
 ## Device selection and service permission
 
+The application accepts either observed name, `VivaMark` or `D40(BLE)`, or an
+advertisement containing the AE00 service UUID. On 2026-11-25 the badge's retained
+BLE identity was discovered as `D40(BLE)` with no advertised service UUIDs.
+The old exact-`VivaMark` filter hid it. A connection to that exact identity passed
+mutual authentication and returned the same system-1, 8 MiB, 360×360 capabilities;
+no resource writes occurred. See [sanitized live evidence](../artifacts/discovery-alias-readonly.json).
+AE00-scoped characteristic lookup and authentication remain mandatory after selection.
+
 Call `navigator.bluetooth.requestDevice()` directly from a Connect button's click handler. A user gesture is required. If filtering by name or using `acceptAllDevices: true`, put the badge's required service UUIDs in `optionalServices`; choosing a device alone does not grant access to every service. A service filter can hide devices that do not advertise that UUID even when they expose it after connection. During discovery, an all-devices chooser with explicit optional service UUIDs is useful. Queue GATT operations instead of issuing concurrent reads/writes. Chrome's `chrome://bluetooth-internals` helps inspect services, characteristics and descriptors. [Chrome implementation guide](https://developer.chrome.com/docs/capabilities/bluetooth)
 
 ```js
